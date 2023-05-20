@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+
+:root {
+    --cor-do-fundo: rgba(255, 255, 255, 0.959);
+    --cor-dos-textos: rgb(64, 64, 85);
+    --fonte-principal: 'Roboto', sans-serif;
+    --fonte-segundaria: 'Wix Madefor Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-do-fundo);
+}
+
+.cabeçalho {
+    padding: 1% 0% 0% 15%;
+}
+
+.cabeçalho__menu {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.cabeçalho__menu__link {
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: var(--cor-dos-textos);
+}
+
+.cabeçalho__menu__link__nome {
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    color: var(--cor-dos-textos);
+    margin-right: auto;
+    margin-left: -7%;
+}
+
+.cabeçalho__menu__link__fundo {
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+.apresentacao {
+    margin: 5% 12%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 3.75rem;
+    width: 600px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-dos-textos);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 2.125rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-dos-textos);
+}
+
+.imagem__inicial {
+    width: 615px;
+    margin: 3% 18%;
+    height: 590px;
+}
+
+.icones__redes {
+    width: 30px;
+    display: flex;
+}
+
+.apresentacao__links {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 4%;
+}
+
+.sobre__mim {
+    box-sizing: border-box;
+    margin-top: 510px;
+    padding:15% 21%;
+    display: block;
+    background-color: var(--cor-dos-textos);
+    width: 400px;
+    border-radius: 2%;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    position: relative;
+    top: -200px;
+    right: -200px;
+}
+
+.sobre__mim__titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: flex-start;
+    font-family: var(--fonte-segundaria);
+    color: var(--cor-do-fundo);
+    width: 700px;
+    margin: -240px -350px;
+}
+
+.sobre__mim__paragrafo__1  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    font-family: var(--fonte-segundaria);
+    color: var(--cor-do-fundo);
+    width: 700px;
+    margin: 310px -350px;
+}
+
+.sobre__mim__paragrafo__2  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    font-family: var(--fonte-segundaria);
+    color: var(--cor-do-fundo);
+    width: 700px;
+    margin: -290px -350px;
+}
+
+.sobre__mim__paragrafo__3  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    font-family: var(--fonte-segundaria);
+    color: var(--cor-do-fundo);
+    width: 700px;
+    margin: 310px -350px;
+}
+
+.sobre__mim__paragrafo__4  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    font-family: var(--fonte-segundaria);
+    color: var(--cor-do-fundo);
+    width: 700px;
+    margin: -290px -350px;
+}
+
+.barra__1 {
+    width: 70%;
+    height: 2px;
+    margin: 20px 250px;
+    background-color: #a0a0a0;
+  }
+
+@media (max-width: 1240px) {
+    .cabeçalho {
+        padding: 1% 0% 0% 15%;
+    }
+
+    .apresentacao__conteudo {
+        margin: 10px -20px;
+        
+    }
+
+    .barra__1 {
+        margin: 20px 200px;
+    }
+
+    .imagem__inicial {
+        width: 0px;
+    }
+
+    .cabeçalho__menu {
+        gap: 13%;
+        font-size: 2px;
+    }
+
+    .cabeçalho__menu__link {
+        font-size: 15px;
+        flex-direction: row;
+    }
+
+    .cabeçalho__menu__link__nome{
+        font-size: 15px;
+        flex-direction: row;
+    }
+
+    .cabeçalho__menu__link__fundo {
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+
+
+}
